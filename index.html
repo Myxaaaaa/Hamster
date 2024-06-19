@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hamster Clicker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="app">
+        <div class="header">
+            <div class="badge">
+                <span class="badge-title">Прибыль за тап</span>
+                <span id="tap-value" class="badge-value">+5</span>
+            </div>
+            <div class="badge">
+                <span class="badge-title">Монет для апа</span>
+                <span class="badge-value">100K</span>
+            </div>
+            <div class="badge">
+                <span class="badge-title">Прибыль в час</span>
+                <span class="badge-value">+100K</span>
+            </div>
+        </div>
+        <div class="coins">
+            <img src="images/coin.svg" alt="COIN">
+            <span id="coins-value">0</span>
+        </div>
+        <div class="level"></div>
+        <div class="humster">
+            <button id="humster-button"></button>
+            <div id="float-container"></div>
+        </div>
+        <div class="footer">
+            <div class="badge"> 
+                <img src="https://cdn.icon-icons.com/icons2/1508/PNG/512/preferencessystempower_103835.png" alt="energy">
+                <span id="energy-value" class="badge-value">5000/<span id="energy-decrement">5000</span></span>
+            </div>
+        </div>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>

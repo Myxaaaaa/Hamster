@@ -1,0 +1,162 @@
+body {
+    background-color: rgb(28, 12, 12);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.app {
+    width: 70%;
+    height: 100vh;
+    border-radius: 40px 40px 0 0;
+    border-top: 5px solid gold;
+    background-color: #333;
+    -webkit-box-shadow: 0px -12px 30px 0px gold;
+    -moz-box-shadow: 0px -12px 30px 0px gold;
+    box-shadow: 0px -12px 30px 0px gold;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.header {
+    display: flex;
+    gap: 20px;
+}
+
+.header .badge {
+    height: 8rem;
+    width: calc(100% / 3);
+    background-color: #777;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.header .badge .badge-title {
+    font-size: 2.00rem;
+    font-weight: 600;
+}
+
+.header .badge .badge-value {
+    font-size: 2.25rem;
+    font-weight: 800;
+    color: white;
+}
+
+.header .badge:nth-child(1) .badge-title {
+    color: orange;
+}
+
+.header .badge:nth-child(2) .badge-title {
+    color: plum;
+}
+
+.header .badge:nth-child(3) .badge-title {
+    color: palegreen;
+}
+
+.coins {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+    font-size: 5.00rem;
+    font-weight: 900;
+    color: white;
+}
+
+
+.coins img {
+    width: 80px;
+    height: 80px;
+}
+
+.humster {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#humster-button {
+    background: url("images/humster.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #2d26b4;
+    border: 20px solid blue;
+    border-radius: 100%;
+    width: 400px;
+    height: 400px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+#humster-button:active {
+    filter: brightness(70%);
+    transform: scale(0.9);
+}
+
+.footer {
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.footer .badge {
+    height: 6rem;
+    width: calc(100% / 2);
+    display: flex;
+    align-items: center;
+    gap: 5px;   
+}
+
+.footer .badge img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.footer .badge .badge-title {
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: yellow;
+}
+
+.footer .badge .badge-value {
+    font-size: 1.50rem;
+    font-weight: 800;
+    color: white;
+}
+
+#float-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+
+.float-text {
+    position: absolute;
+    font-size: 4rem;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    animation: floatUp 1s ease-out forwards;
+}
+
+@keyframes floatUp {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+}
