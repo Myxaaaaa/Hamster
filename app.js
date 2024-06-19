@@ -71,7 +71,7 @@ humsterButton.addEventListener("click", humsterTapHandler)
 // функция для добавления монеток, случайное количество добавляется т.к у нас прибыль в час 100к то в течении 60 минут он будет добавлять рандом число пока не достигнет через час 100к
 function addRandomCoins() {
     if (currentCoinsPerHour < coinsPerHour) {
-        let randomCoins = Math.floor(Math.random() * 10) + 1 // добавлениев случайного числа от 1 до 10
+        let randomCoins = Math.floor(Math.random() * 100) + 1 // добавлениев случайного числа от 1 до 10
         let currentCoins = parseInt(coinsValue.innerText)
         let newCoins = currentCoins + randomCoins
         coinsValue.innerText = newCoins
